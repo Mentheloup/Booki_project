@@ -59,6 +59,10 @@ a {
     color: var(--main-bg-color)
 }
 
+h1 {
+    font-size: 22px;
+}
+
 /****** Barre navigation ***********/
 
 nav {
@@ -81,13 +85,33 @@ nav {
 }
 
 #nav-button {
-   
+   padding-top: 14px;
 }
 
 #nav-button:hover {
     border-top-style: solid;
     border-width: 2px;
     color: var(--main-color);
+}
+
+.barre-research {
+    display: flex;
+    align-items: center;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+}
+
+.one-filter {
+    display: flex;
+    align-items: center;
+}
+
+.line-info {
+    display: flex;
+    align-items: center;    
 }
 
 /****** Hebergements And Populaires ***********/
@@ -153,7 +177,14 @@ nav {
     margin-bottom: 5px;
 }
 
+footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+}
 
+.footer-ul {
+    list-style-type: none;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
