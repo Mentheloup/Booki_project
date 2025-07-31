@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -56,6 +57,37 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Barre navigation ***********/
+
+nav {
+    max-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 61.09px;
+    height: 19px;
+    margin: 1em;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 36px;
+    list-style-type: none;
+}
+
+#nav-button {
+   
+}
+
+#nav-button:hover {
+    border-top-style: solid;
+    border-width: 2px;
+    color: var(--main-color);
 }
 
 /****** Hebergements And Populaires ***********/
