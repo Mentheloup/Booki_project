@@ -14,6 +14,15 @@
     justify-content: space-between;
 }
 
+.filtre_margin {
+    margin-right: 10px;
+}
+
+.s-i-f {
+/* scale icon filter */
+    transform: scale(1.2);
+}
+
 .f-c {
 /* flex center */
     display: flex;
@@ -23,8 +32,4 @@
 
 .margin-top-30 {
     margin-top: 30px;
-}
-
-.fdsf {
-    margin-top: ;
 }
