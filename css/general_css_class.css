@@ -1,0 +1,26 @@
+.flex {
+    display: flex;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.f_c {
+/* flex center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
