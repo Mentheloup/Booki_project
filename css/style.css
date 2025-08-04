@@ -66,13 +66,13 @@ h1 {
 /****** Barre navigation ***********/
 
 nav {
-    max-height: 79px;
+    height: 79px;
 }
 
 #logo {
     width: 61.09px;
     height: 19px;
-    margin: 1em;
+    margin-top: 29px;
 }
 
 .nav-ul {
