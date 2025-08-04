@@ -12,12 +12,13 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/general_css_class.css">
 </head>
 
 <body>
     <div class="main-container">
         <!-- BARRE NAVIGATION -->
-        <nav>
+        <nav class="flex align-item-center justify-content-between">
             <img id="logo" src="images/logo/Booki.png" alt="Logo Booki">
 
             <ul class="nav-ul">
@@ -33,11 +34,15 @@
 
             <!-- BARRE DE RECHERCHE -->
              <div class="barre-research">
-                <i class="fa-solid fa-location-dot"></i>
-                <form method="get" action="">
+                <i id="symbole-localisation" class="f_c fa-solid fa-location-dot"></i>
+                <h3 id="recherche_localisation" class="f_c">
+                    Marseille, France
+                </h3>
+                <!-- A ajouter pour que ce soit fonctionnelle ?
+                <form id="recherche_localisation" method="get" action="">
                      <input type="text" name="destination" placeholder="Marseille, France">
-                </form>
-                <h4>Recherche</h4>
+                </form> -->
+                <h4 id="recherche" class="f_c">Recherche</h4>
             </div>
 
             <!-- FILTRE-->
