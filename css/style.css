@@ -22,6 +22,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -277,11 +278,19 @@ nav {
 
 footer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     background-color: var(--main-bg-color);
 }
 
 .footer-ul {
     list-style-type: none;
+    width: 446px;
+}
+
+.footer-ul li {
+    margin-top: 12px;
 }
 
 /******** Activites Marseille  *******/
