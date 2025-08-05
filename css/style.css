@@ -284,6 +284,39 @@ footer {
     list-style-type: none;
 }
 
+/******** Activites Marseille  *******/
+
+.card-activites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch; 
+}
+
+.one-card-activites {
+    background-color: white;
+    border-radius: 25px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+    width: 297px;
+}
+
+.one-card-activites img {
+    width: 297px;
+    height: 380px;
+
+    object-fit: cover;
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.one-card-activites h3 {
+    padding: 20px;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
