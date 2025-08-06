@@ -34,13 +34,12 @@ a {
 
 .section-title {
     margin: 0;
-    margin-bottom: 20px;
     font-size: 22px;
 }
 
 .card {
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -172,16 +171,23 @@ nav {
     margin-left: 0px;
 }
 
-#info-recherche-icone {
-    transform: scale(0.7);
-
+.bulle-info {
+    display: flex;
+    justify-content: center;
+    
     border-style: solid;
     border-width: 1px;
     border-color: lightgray;
     border-radius: 15px 15px 15px 15px;
 
-    width: 30px;
-    height: 30p;
+    width: 22px;
+    height: 22px;
+
+    margin-right: 5px;
+}
+
+#info-recherche-icone {
+    transform: scale(0.7);
 }
 
 /****** Hebergements And Populaires ***********/
@@ -209,6 +215,8 @@ nav {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+
+    margin-top: 20px;
 }
 
 .section-add {
@@ -227,8 +235,12 @@ nav {
     margin-bottom: 5px;
 }
 
-.card-content {
+.hebergements-cards .card-content {
     margin: 10px;
+}
+
+.hebergements-cards .card {
+    height: 207px;
 }
 
 /****** Populaires ***********/
@@ -302,6 +314,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   align-content: stretch; 
+
+  margin-top: 25px;
 }
 
 .one-card-activites {
