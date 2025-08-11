@@ -18,12 +18,11 @@
     margin-right: 15px;
 }
 
-.s-i-f {
-/* scale icon filter */
+.scale-icon-filter {
     transform: scale(1.3);
 }
 
-.f-c {
+.flex-center {
 /* flex center */
     display: flex;
     align-items: center;
