@@ -523,4 +523,10 @@ footer {
         margin-bottom: 15px;
         margin-right: 15px;
     }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
