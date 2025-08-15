@@ -101,6 +101,9 @@ nav {
 .barre-research {
     display: flex;
     align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .filter {
@@ -127,6 +130,28 @@ nav {
 
     height: 49px;
     width: 132px;
+
+    margin: 0;
+}
+
+#icone-research-phone {
+    visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.349) 0px 3px 5px;
+
+    background-color: var(--main-color);
+    color: var(--main-bg-color) ;
+
+    border-radius: 15px 15px 15px 15px;
+
+    height: 50px;
+    width: 49px;
+
+    transform: translate(-13px);
 }
 
 input[type='search'] {
@@ -416,6 +441,15 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    /* RESEARCH */
+    #recherche {
+        display: none;
+    }
+
+    #icone-research-phone {
+    visibility: visible;
+    }
+
 
     /* FILTER */
     .all-filters {
