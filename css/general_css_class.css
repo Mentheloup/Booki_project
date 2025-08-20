@@ -35,3 +35,13 @@
 .margin-top-40 {
     margin-top: 40px;
 }
+
+@media (max-width: 767.98px) {
+    .scale-icon-filter {
+        transform: scale(1.2);
+    }
+
+    .filter-margin {
+        margin-right: 10px;
+    }
+}
