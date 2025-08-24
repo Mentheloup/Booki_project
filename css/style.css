@@ -16,11 +16,13 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -58,22 +60,248 @@ a {
     color: var(--main-bg-color)
 }
 
+h1 {
+    font-size: 22px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+/****** Barre navigation ***********/
+
+nav {
+    height: 79px;
+}
+
+#logo {
+    width: 61.09px;
+    height: 19px;
+    margin-top: 29px;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 36px;
+    list-style-type: none;
+}
+
+#nav-button {
+   padding-top: 14px;
+}
+
+#nav-button:hover {
+    border-top-style: solid;
+    border-width: 2px;
+    color: var(--main-color);
+}
+
+/****** Barre de recherche ******/
+
+.barre-research {
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.all-filters {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#recherche {
+    background-color: var(--main-color);
+    color: var(--main-bg-color) ;
+
+    border-radius: 0px 15px 15px 0px;
+
+    height: 49px;
+    width: 132px;
+
+    margin: 0;
+}
+
+#icone-research-phone {
+    visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.349) 0px 3px 5px;
+
+    background-color: var(--main-color);
+    color: var(--main-bg-color) ;
+
+    border-radius: 15px 15px 15px 15px;
+
+    height: 50px;
+    width: 49px;
+
+    transform: translate(-13px);
+}
+
+input[type='search'] {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#research-localisation {
+    height: 49px;
+    width: 200px;
+
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style:none;
+    border-right-style:none;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+#symbole-localisation {
+    background-color: lightgrey;
+    color: black;
+
+    border-radius: 15px 0px 0px 15px;
+
+    height: 49px;
+    width: 49px;
+}
+
+/****** Filtres ******/
+
+.one-filter {
+    display: flex;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;
+
+    border-radius: 50px 50px 50px 50px;
+
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    white-space: nowrap;
+}
+
+.one-filter:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.line-info {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 0px;
+}
+
+.bulle-info {
+    display: flex;
+    justify-content: center;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 15px 15px 15px 15px;
+
+    width: 22px;
+    height: 22px;
+
+    min-width: 22px;
+
+    margin-right: 5px;
+}
+
+#info-recherche-icone {
+    transform: scale(0.7);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    height: 40%;
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
+.hebergements {
+    background-color: var(--main-bg-color);
+}
+
+.populaires {
+    background-color: var(--main-bg-color);
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.hebergements-cards a {
+    margin-top: 20px;
+
+    width: 31%;
+}
+
+.section-add {
+    margin-top: 20px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 60%;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-subtitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hebergements-cards .card-content {
+    margin: 5px;
+}
+
+.hebergements-cards .card {
+    height: 207px;
 }
 
 /****** Populaires ***********/
@@ -113,55 +341,62 @@ a {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--main-bg-color);
 }
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
+.footer-ul {
+    list-style-type: none;
+    width: 446px;
 }
 
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+.footer-ul li {
+    margin-top: 12px;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+/******** Activites Marseille  *******/
+
+.card-activites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+
+  margin-top: 25px;
+}
+
+.section-activites a {
+    width: 23%;
+    height: 100%;
+}
+
+.one-card-activites {
+    background-color: white;
+    border-radius: 25px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+    height: 70%;
+}
+
+.one-card-activites img {
+    width: 100%;
+    aspect-ratio: 3/4;
+
+    flex: 1 1 auto;
+
+    object-fit: cover;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.one-card-activites h3 {
+    padding: 20px;
 }
