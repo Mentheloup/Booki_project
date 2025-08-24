@@ -269,13 +269,14 @@ input:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    justify-content: space-between;
 }
 
 .hebergements-cards a {
-    margin: 20px;
-    margin-left: 0px;
+    margin-top: 20px;
 
-    width: 30%;
+    width: 31%;
 }
 
 .section-add {
