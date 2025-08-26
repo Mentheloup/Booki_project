@@ -93,14 +93,14 @@
         border-color: var(--filter-bg-color);
     }
 
-    #nav-button {
+    .nav-button {
         padding-top: 14px;
         padding-bottom: 14px;
 
         border-bottom-style: none;
     }
 
-    #nav-button:hover {
+    .nav-button:hover {
         border-top-style: none;
     }
 
